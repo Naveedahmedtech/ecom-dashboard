@@ -1,8 +1,14 @@
-import React from 'react'
+import TopItems from './TopItems/TopItems'
+import { Outlet } from 'react-router-dom'
 
 const TopLayout = () => {
   return (
-    <div>Top layout</div>
+    <>
+      <TopItems />
+      <main className="wrap-pd ">
+        <Outlet />
+      </main>
+    </>
   )
 }
 

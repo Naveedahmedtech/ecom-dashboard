@@ -1,0 +1,20 @@
+.topitems-header {
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    position: fixed;
+    width: calc(100% - 220px);
+}
+
+.icons-style {
+    color: white;
+    width: 30px !important;
+    height: 30px !important;
+    margin-right: 25px !important;
+}
+
+/* media query */
+@media screen and (max-width: 1200px) {
+    .topitems-header {
+        width: 100%;
+    }
+}

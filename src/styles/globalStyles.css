@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;0,700;1,300;1,400;1,500&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,7 +10,7 @@
 }
 
 /* side nav */
-.side-nav{
+.side-nav {
     position: fixed !important;
     top: 0 !important;
     left: 0 !important;
@@ -19,76 +19,154 @@
     padding: 20px;
     background-color: black !important;
 }
-/* main content */
-.main-content{
-    margin-left: 250px;
+
+/* top header and main content spacing */
+.main-content {
+    margin-left: 220px;
+}
+/* adjust main content spacing */
+.main-content-margin{
+    margin-top: 80px;
+}
+
+/* padding for wrapping main components */
+.wrap-pd {
+    padding: 10px;
 }
 
 /* flex class */
 .flex {
     display: flex;
 }
-.justfiy-center{
+
+.justify-center {
     justify-content: center;
 }
-.align-items-center{
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
     align-items: center;
 }
-.wrap{
+
+.wrap {
     flex-wrap: wrap;
 }
-.flex-column{
+
+.flex-column {
     flex-direction: column;
 }
-.grow{
+
+.grow {
     flex-grow: 1;
 }
-.justfiy-start{
+
+.justfiy-start {
     justify-content: flex-start;
 }
 
 /* margin */
-.ml-1{
+.ml-1 {
     margin-left: 20px;
 }
-.mr-1{
+
+.mr-1 {
     margin-right: 20px;
 }
-.mt-5{
+
+.mr {
+    margin-right: 10px;
+}
+
+.mt-5 {
     margin-top: 30px;
 }
-.mt-4{
+
+.mt-4 {
     margin-top: 20px;
 }
-.mt-3{
+
+.mt-3 {
     margin-top: 10px;
 }
 
+/* padding */
+.pd {
+    padding: 10px;
+}
+
+.pd-2 {
+    padding: 20px;
+}
+
+.pdt-1 {
+    padding-top: 10px;
+}
+
+.pdt-3 {
+    padding-top: 30px;
+}
+
 /* cursor */
-.pointer{
+.pointer {
     cursor: pointer;
 }
 
 
 /* fonts */
-.n-font{
+.n-font {
     font-size: 17px !important;
 }
-.m-font{
+
+.m-font {
     font-size: 25px !important;
 }
 
+.lg-font {
+    font-size: 30px !important;
+}
+
 /* colors */
-.c-white{
+.c-white {
     color: white;
 }
 
+/* background colors */
+.bg-black {
+    background-color: black;
+}
+
+.c-green {
+    color: green;
+}
+
+/* border */
+.rounded {
+    border-radius: 10px;
+}
+
 /* links  */
-.links{
+.links {
     text-decoration: none;
 }
 
 /* width */
-.w-4{
+.w-4 {
     width: 40px;
+}
+
+/* media queries */
+@media (max-width: 1200px) {
+
+    /* side nav */
+    .side-nav {
+        display: none !important;
+    }
+
+    /* main content */
+    .main-content {
+        margin-left: 0;
+    }
 }

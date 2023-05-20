@@ -5,7 +5,7 @@ import logo from "../../../../assets/images/logo/react.png";
 
 const Logo = () => {
   return (
-    <div className="flex align-items-center">
+    <div className="flex align-items-center" style={{height: '50px'}}>
       <img src={logo} alt="logo" width={50} className="mr-1 pointer" />
       <Typography variant="h5">NAVEED</Typography>
     </div>
