@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+# pushing the pie chart as it is incompleted
+./src/pages/Dashboard/PieChart
