@@ -5,78 +5,38 @@ import "../styles.css";
 const PieChart = () => {
   const [activeLines, setActiveLines] = useState(["New Cases", "Old Cases"]);
 
-  const data = [
-    {
-      id: "New Cases",
-      data: [
-        {
-          id: "scala",
-          label: "scala",
-          value: 105,
-          color: "hsl(345, 70%, 50%)",
-        },
-        {
-          id: "haskell",
-          label: "haskell",
-          value: 313,
-          color: "hsl(128, 70%, 50%)",
-        },
-        {
-          id: "rust",
-          label: "rust",
-          value: 396,
-          color: "hsl(186, 70%, 50%)",
-        },
-        {
-          id: "lisp",
-          label: "lisp",
-          value: 239,
-          color: "hsl(79, 70%, 50%)",
-        },
-        {
-          id: "c",
-          label: "c",
-          value: 529,
-          color: "hsl(256, 70%, 50%)",
-        },
-      ],
-    },
-    {
-      id: "Old Cases",
-      data: [
-        {
-          id: "scala",
-          label: "scala",
-          value: 105,
-          color: "hsl(345, 70%, 50%)",
-        },
-        {
-          id: "haskell",
-          label: "haskell",
-          value: 313,
-          color: "hsl(128, 70%, 50%)",
-        },
-        {
-          id: "rust",
-          label: "rust",
-          value: 396,
-          color: "hsl(186, 70%, 50%)",
-        },
-        {
-          id: "lisp",
-          label: "lisp",
-          value: 239,
-          color: "hsl(79, 70%, 50%)",
-        },
-        {
-          id: "c",
-          label: "c",
-          value: 529,
-          color: "hsl(256, 70%, 50%)",
-        },
-      ],
-    },
-  ];
+const data = [
+  {
+    id: "New Cases",
+    data: [
+      {
+        id: "scala1",
+        label: "Scala",
+        value: 105,
+        color: "hsl(345, 70%, 50%)",
+      },
+      {
+        id: "scala2",
+        label: "Scala",
+        value: 25,
+        color: "hsl(345, 70%, 50%)",
+      },
+      {
+        id: "scala3",
+        label: "Scala",
+        value: 55,
+        color: "hsl(345, 70%, 50%)",
+      },
+      {
+        id: "scala4",
+        label: "Scala",
+        value: 200,
+        color: "hsl(345, 70%, 50%)",
+      },
+    ],
+  },
+];
+
 
   const handleLegendClick = (legend) => {
     const isActive = activeLines.includes(legend);
@@ -91,7 +51,7 @@ const PieChart = () => {
   const filteredData = data.filter((d) => activeLines.includes(d.id));
 
   return (
-    <div style={{ width: "100%", height: "400px" }}>
+    <div style={{ width: "500px", height: "400px" }}>
       <ResponsivePie
         data={filteredData}
         margin={{ top: 40, right: 80, bottom: 80, left: 80 }}

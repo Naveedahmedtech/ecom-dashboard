@@ -9,29 +9,30 @@ const LineChart = () => {
     {
       id: "New Cases",
       data: [
-        { x: "Ahan", y: 15 },
+        { x: "Ahan", y: 55 },
         { x: "New", y: 60 },
-        { x: "Old", y: 5 },
-        { x: "Oldest", y: 30 },
-        { x: "Newer", y: 10 },
-        { x: "Bad", y: 0 },
-        { x: "Better", y: 100 },
+        { x: "Old", y: 45 },
+        { x: "Oldest", y: 35 },
+        { x: "Newer", y: 45 },
+        { x: "Bad", y: 38 },
+        { x: "Better", y: 50 },
         { x: "Good", y: 50 },
       ],
     },
     {
       id: "Old Cases",
       data: [
-        { x: "Ahan", y: 80 },
-        { x: "New", y: 90 },
-        { x: "Old", y: 50 },
-        { x: "Oldest", y: 60 },
-        { x: "Newer", y: 40 },
-        { x: "Bad", y: 5 },
+        { x: "Ahan", y: 30 },
+        { x: "New", y: 20 },
+        { x: "Old", y: 20 },
+        { x: "Oldest", y: 20 },
+        { x: "Newer", y: 20 },
+        { x: "Bad", y: 25 },
         { x: "Better", y: 25 },
-        { x: "Good", y: 8 },
+        { x: "Good", y: 28 },
       ],
     },
+
   ];
 
   const handleLegendClick = (legend) => {
@@ -92,7 +93,7 @@ const LineChart = () => {
             direction: "row",
             justify: false,
             translateX: 12,
-            translateY: -23,
+            translateY: -43,
             itemWidth: 100,
             itemHeight: 20,
             itemsSpacing: 4,

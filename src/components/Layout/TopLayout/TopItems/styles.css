@@ -3,6 +3,7 @@
     padding: 10px;
     position: fixed;
     width: calc(100% - 220px);
+    z-index: 1;
 }
 
 .icons-style {

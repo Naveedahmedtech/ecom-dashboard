@@ -12,6 +12,9 @@
 body{
     overflow-x: hidden;
 }
+::-webkit-scrollbar{
+    display: none;
+}
 
 /* side nav */
 .side-nav {
