@@ -26,7 +26,7 @@ const SideLinks = () => {
       <nav className="mt-5 flex flex-column justify-center ">
         <div className=" mt-4">
           <NavLink to="/" className="links n-font c-white flex align-items-center ">
-            <Accordion
+            <div
               sx={{
                 backgroundColor: "transparent",
                 display: "flex",
@@ -34,16 +34,11 @@ const SideLinks = () => {
               }}
             >
               <AccordionSummary
-                aria-controls="panel1bh-content"
-                id="panel1bh-header"
               >
                 <DashboardIcon className=" mr-1 c-white m-font" />
                 <span className="c-white">Dashboard</span>
               </AccordionSummary>
-              <AccordionDetails>
-                <Typography className="c-white">List</Typography>
-              </AccordionDetails>
-            </Accordion>
+            </div>
           </NavLink>
         </div>
         <div className=" mt-4">
@@ -97,6 +92,12 @@ const SideLinks = () => {
                 className="links n-font c-white flex align-items-center "
               >
                 <Typography className="c-white">List</Typography>
+              </NavLink>
+              <NavLink
+                to="products/create"
+                className="links n-font c-white flex align-items-center "
+              >
+                <Typography className="c-white mt-3">Create</Typography>
               </NavLink>
             </AccordionDetails>
           </Accordion>

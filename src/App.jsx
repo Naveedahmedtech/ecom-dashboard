@@ -9,8 +9,8 @@ import {
 import {
   Dashboard,
   Customers,
-  Products,
   ProductList,
+  CreateProduct,
   Orders,
   Invoices,
 } from "./pages/allPages/allPages";
@@ -31,12 +31,11 @@ function App() {
             <Route index element={<Dashboard />} />
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="customers" element={<Customers />} />
-            <Route path="products" element={<Products />}>
-              <Route path="list" element={<ProductList />} />
+              <Route path="products/list" element={<ProductList />} />
+              <Route path="products/create" element={<CreateProduct />} />
             </Route>
             <Route path="orders" element={<Orders />} />
             <Route path="invoices" element={<Invoices />} />
-          </Route>
         </Route>
         <Route
           path="*"
