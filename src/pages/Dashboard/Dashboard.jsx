@@ -1,7 +1,10 @@
-import { Grid, Typography, Box } from "@mui/material";
+import { Grid, Typography, Box, Button } from "@mui/material";
 import InsertChartIcon from "@mui/icons-material/InsertChart";
-import LineChart from "./LineChart/LineChart";
-import PieChart from "./PieChart/PieChart";
+import LineChart from "./Charts/LineChart/LineChart";
+import PieChart from "./Charts/PieChart/PieChart";
+import BarChart from "./Charts/BarChart/BarChart";
+import CountryTable from './Table/CountryTable'
+import TopProducts from "./TopProducts/TopProducts";
 import './styles.css'
 const Dashboard = () => {
   return (
@@ -87,20 +90,64 @@ const Dashboard = () => {
           columns={{ xs: 4, sm: 8, md: 12 }}
           className="my-5 hidden-y felx"
         >
-          <Grid item xs={12} sm={12} md={6} sx={{ boxShadow: '12px 12px 12px 12px solid black' }}>
-            <Typography sx={{marginLeft: '20px', marginTop: '20px'}}>Sales Revenue</Typography>
-            <LineChart />
-          </Grid>
-          <div className="grow"></div>
           <Grid
             item
             xs={12}
             sm={12}
-            md={4}
-            sx={{ marginRight: "5px", border: "1px solid black" }}
+            md={6}
+            sx={{ boxShadow: "12px 12px 12px 12px solid black" }}
           >
-            <Typography sx={{marginLeft: '20px', marginTop: '20px'}}>Channels</Typography>
+            <Typography variant="h5" sx={{ marginTop: "20px" }}>
+              Sales Revenue
+            </Typography>
+            <LineChart />
+          </Grid>
+          <div className="grow"></div>
+          <Grid item xs={12} sm={12} md={5} sx={{ marginRight: "5px" }}>
+            <Typography variant="h5" sx={{ marginTop: "20px" }}>
+              Channels
+            </Typography>
             <PieChart />
+            <Typography>
+              More than 1,200,000 developers used Creative Tim's products and
+              over 700,000 projects were created.
+              <Button variant="contained" size="small">
+                Read more
+              </Button>
+            </Typography>
+          </Grid>
+        </Grid>
+        <Grid container columns={{ xs: 4, sm: 8, md: 12 }} className="my-5">
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={6}
+            sx={{ boxShadow: "12px 12px 12px 12px solid black" }}
+          >
+            <Typography variant="h5" sx={{ marginBottom: "20px" }}>
+              Sales by age
+            </Typography>
+            <BarChart />
+          </Grid>
+          <div className="grow"></div>
+          <Grid item xs={12} sm={12} md={5} sx={{ marginRight: "5px" }}>
+            <Typography variant="h5" sx={{ marginBottom: "20px" }}>
+              Sales by country
+            </Typography>
+            <CountryTable />
+          </Grid>
+        </Grid>
+        <Grid container columns={{ xs: 4, sm: 8, md: 12 }} className="my-5">
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={12}
+            sx={{ boxShadow: "12px 12px 12px 12px solid black" }}
+          >
+            <Typography variant="h5">Top Products</Typography>
+            <TopProducts />
           </Grid>
         </Grid>
       </main>

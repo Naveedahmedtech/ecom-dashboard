@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ResponsiveLine } from "@nivo/line";
-import "../styles.css";
+import "../../styles.css";
 
 const LineChart = () => {
   const [activeLines, setActiveLines] = useState(["New Cases", "Old Cases"]);
