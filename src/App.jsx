@@ -8,7 +8,7 @@ import {
 // import all the pages
 import {
   Dashboard,
-  Customers,
+  CustomerList,
   ProductList,
   CreateProduct,
   Orders,
@@ -30,12 +30,12 @@ function App() {
           <Route path="/" element={<TopLayout />}>
             <Route index element={<Dashboard />} />
             <Route path="dashboard" element={<Dashboard />} />
-            <Route path="customers" element={<Customers />} />
-              <Route path="products/list" element={<ProductList />} />
-              <Route path="products/create" element={<CreateProduct />} />
-            </Route>
-            <Route path="orders" element={<Orders />} />
-            <Route path="invoices" element={<Invoices />} />
+            <Route path="customer/list" element={<CustomerList />} />
+            <Route path="products/list" element={<ProductList />} />
+            <Route path="products/create" element={<CreateProduct />} />
+          </Route>
+          <Route path="orders" element={<Orders />} />
+          <Route path="invoices" element={<Invoices />} />
         </Route>
         <Route
           path="*"

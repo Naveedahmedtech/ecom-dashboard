@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { classNames } from "primereact/utils";
 import { DataTable } from "primereact/datatable";
 import { Column } from "primereact/column";
-import { ProductService } from "./ProductService";
+import { ProductService } from "./service/ProductService";
 import { Toast } from "primereact/toast";
 import { Button } from "primereact/button";
 import { FileUpload } from "primereact/fileupload";
@@ -360,7 +360,7 @@ const ProductList = () => {
       <div className="flex justify-between">
         <div>
           <Typography variant="h4">Products</Typography>
-          <Typography color="text.secondary">Pahtnames later</Typography>
+          <Typography color="text.secondary">Pathnames later</Typography>
         </div>
         <div>
           <Button>

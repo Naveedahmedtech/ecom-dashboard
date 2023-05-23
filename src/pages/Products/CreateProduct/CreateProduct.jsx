@@ -21,6 +21,7 @@ export default function CreateProduct() {
             <InputText
               value={value}
               className="full-width"
+              placeholder="Title"
               onChange={(e) => setValue(e.target.value)}
             />
           </div>
@@ -58,6 +59,7 @@ export default function CreateProduct() {
               <InputText
                 value={value2}
                 className="full-width"
+                placeholder="Barcode"
                 onChange={(e) => setValue2(e.target.value)}
               />
             </div>
@@ -65,6 +67,7 @@ export default function CreateProduct() {
               <InputText
                 value={value3}
                 className="full-width"
+                placeholder="SKU"
                 onChange={(e) => setValue3(e.target.value)}
               />
             </div>
