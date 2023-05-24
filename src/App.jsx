@@ -3,7 +3,7 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
   Route,
-  NavLink
+  NavLink,
 } from "react-router-dom";
 // import all the pages
 import {
@@ -11,7 +11,7 @@ import {
   CustomerList,
   ProductList,
   CreateProduct,
-  Orders,
+  OrderList,
   Invoices,
 } from "./pages/allPages/allPages";
 // import all the components
@@ -33,9 +33,9 @@ function App() {
             <Route path="customer/list" element={<CustomerList />} />
             <Route path="products/list" element={<ProductList />} />
             <Route path="products/create" element={<CreateProduct />} />
+            <Route path="orders/list" element={<OrderList />} />
+            <Route path="invoices" element={<Invoices />} />
           </Route>
-          <Route path="orders" element={<Orders />} />
-          <Route path="invoices" element={<Invoices />} />
         </Route>
         <Route
           path="*"

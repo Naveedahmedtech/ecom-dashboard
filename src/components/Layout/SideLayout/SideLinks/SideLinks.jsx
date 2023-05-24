@@ -69,12 +69,6 @@ const SideLinks = () => {
               >
                 <Typography className="c-white">List</Typography>
               </NavLink>
-              <NavLink
-                to="customer/details"
-                className="links n-font c-white flex align-items-center "
-              >
-                <Typography className="c-white mt-3">Details</Typography>
-              </NavLink>
             </AccordionDetails>
           </Accordion>
         </div>
@@ -130,16 +124,10 @@ const SideLinks = () => {
             </AccordionSummary>
             <AccordionDetails>
               <NavLink
-                to="customer/list"
+                to="orders/list"
                 className="links n-font c-white flex align-items-center "
               >
                 <Typography className="c-white">List</Typography>
-              </NavLink>
-              <NavLink
-                to="customer/list"
-                className="links n-font c-white flex align-items-center "
-              >
-                <Typography className="c-white mt-3">Details</Typography>
               </NavLink>
             </AccordionDetails>
           </Accordion>
