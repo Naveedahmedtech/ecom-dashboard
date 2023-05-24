@@ -17,7 +17,7 @@ export default function CreateProduct() {
           <div>
             <Typography variant="h5">Basic details</Typography>
           </div>
-          <div className="card flex">
+          <div className=" mt-3 flex">
             <InputText
               value={value}
               className="full-width"
@@ -25,37 +25,37 @@ export default function CreateProduct() {
               onChange={(e) => setValue(e.target.value)}
             />
           </div>
-          <div className="card">
+          <div className="mt-3">
             <Editor
               value={text}
               onTextChange={(e) => setText(e.htmlValue)}
               style={{ height: "200px" }}
             />
           </div>
-          <div>
+          <div className="mt-5">
             <Typography gutterBottom variant="h5">
               Upload Image
             </Typography>
           </div>
-          <div>
+          <div className="mt-3">
             <UploadImage />
           </div>
-          <div>
+          <div className="mt-5">
             <Typography gutterBottom variant="h5">
               Add Price
             </Typography>
           </div>
-          <div>
+          <div className="mt-3">
             <AddPrice />
           </div>
-          <div>
+          <div className="mt-5">
             <Typography gutterBottom variant="h5">
               Select Category
             </Typography>
           </div>
-          <div>
+          <div className="mt-3">
             <Category />
-            <div className="card flex">
+            <div className="mt-3 flex">
               <InputText
                 value={value2}
                 className="full-width"
@@ -63,7 +63,7 @@ export default function CreateProduct() {
                 onChange={(e) => setValue2(e.target.value)}
               />
             </div>
-            <div className="">
+            <div className="mt-3">
               <InputText
                 value={value3}
                 className="full-width"

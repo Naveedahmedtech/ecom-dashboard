@@ -15,6 +15,7 @@
     "@fontsource/roboto": "^4.5.8",
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.13.1",
+    "@mui/system": "^5.13.2",
     "@nivo/core": "^0.83.0",
     "@nivo/line": "^0.83.0",
     "@nivo/pie": "^0.83.0",

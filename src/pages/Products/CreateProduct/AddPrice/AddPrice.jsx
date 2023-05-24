@@ -35,7 +35,7 @@ export default function AddPrice() {
           currency="USD"
         />
       </div>
-      <div className="card flex">
+      <div className="flex">
         <FormGroup>
           <FormControlLabel
             control={<Switch defaultChecked />}

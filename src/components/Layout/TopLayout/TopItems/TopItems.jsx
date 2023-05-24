@@ -1,4 +1,4 @@
-import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
+import SearchField from "./SearchField";
 import ProfileAvatarWithMenu from "./ProfileAvatar";
 import ProfileContactWithMenu from "./ProfileContact";
 import ProfileLanguageWithMenu from "./ProfileLanguage";
@@ -11,10 +11,7 @@ const TopItems = () => {
       <div className="pp">
         <main className="flex align-items-center justify-between">
           <div>
-            <SearchOutlinedIcon
-              sx={{ color: "white" }}
-              className="pointer lg-font"
-            />
+            <SearchField />
           </div>
           <div className="flex align-items-center">
             <ProfileLanguageWithMenu />

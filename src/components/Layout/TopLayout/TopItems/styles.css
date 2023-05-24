@@ -1,5 +1,8 @@
 .topitems-header {
-    background-color: rgb(0, 0, 0);
+/* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(13px);
     padding: 10px;
     position: fixed;
     width: calc(100% - 220px);
@@ -7,7 +10,7 @@
 }
 
 .icons-style {
-    color: white;
+    color: rgb(0, 33, 54) !important;
     width: 30px !important;
     height: 30px !important;
     margin-right: 25px !important;

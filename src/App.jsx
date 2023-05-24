@@ -11,7 +11,7 @@ import {
   CustomerList,
   ProductList,
   CreateProduct,
-  Orders,
+  OrderList,
   Invoices,
 } from "./pages/allPages/allPages";
 // import all the components
@@ -33,9 +33,9 @@ function App() {
             <Route path="customer/list" element={<CustomerList />} />
             <Route path="products/list" element={<ProductList />} />
             <Route path="products/create" element={<CreateProduct />} />
-          </Route>
-          <Route path="orders" element={<Orders />} />
+          <Route path="order/list" element={<OrderList />} />
           <Route path="invoices" element={<Invoices />} />
+          </Route>
         </Route>
         <Route
           path="*"

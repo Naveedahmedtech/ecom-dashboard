@@ -359,7 +359,9 @@ const ProductList = () => {
     <main className="pdt-3 main-content-margin">
       <div className="flex justify-between">
         <div>
-          <Typography variant="h4">Products</Typography>
+          <Typography variant="h4" className="primary-color">
+            Products
+          </Typography>
           <Typography color="text.secondary">Pathnames later</Typography>
         </div>
         <div>
