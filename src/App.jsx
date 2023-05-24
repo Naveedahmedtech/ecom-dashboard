@@ -3,7 +3,7 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
   Route,
-  NavLink
+  NavLink,
 } from "react-router-dom";
 // import all the pages
 import {

@@ -11,9 +11,8 @@ export default function OrdersStas() {
     ordersService.getProductsMini().then((data) => setProducts(data));
   }, []);
 
-
   return (
-    <div className="card">
+    <div className="mt-5">
       <DataTable value={products} tableStyle={{ minWidth: "50rem" }}>
         <Column field="code" header="Code"></Column>
         <Column field="inventoryStatus" header="Status"></Column>

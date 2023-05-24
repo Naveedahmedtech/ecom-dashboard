@@ -4,9 +4,7 @@ const CustomerList = () => {
   return (
     <main className="pdt-3 main-content-margin">
       <div>
-        <Typography variant="h4" className="primary-color">
-          Customers
-        </Typography>
+        <Typography variant="h4">Customers</Typography>
       </div>
       <List />
     </main>
