@@ -15,10 +15,24 @@
     height: 30px !important;
     margin-right: 25px !important;
 }
+.menu {
+    margin-right: 10px !important;
+    display: none !important;
+}
+
+
 
 /* media query */
 @media screen and (max-width: 1200px) {
     .topitems-header {
         width: 100%;
+    }
+    .menu{
+        display: block !important;
+    }
+}
+@media screen and (max-width: 400px) {
+.icons-style {
+        margin-right: 15px !important;
     }
 }

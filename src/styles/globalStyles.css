@@ -32,6 +32,7 @@ body {
 .primary-color {
     color: rgb(0, 33, 54) !important;
 }
+
 .primary-bg {
     background-color: rgb(0, 33, 54) !important;
 }
@@ -183,12 +184,38 @@ body {
     width: 100%;
 }
 
+/* z index */
+.index-up {
+    z-index: 99999999999999999 !important;
+}
+
+
+.bg-side {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(13px);
+    height: 100% !important;
+    width: 100% !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: .5s;
+}
+
 /* media queries */
 @media (max-width: 1200px) {
 
     /* side nav */
     .side-nav {
         display: none !important;
+        left: -200% !important;
+        transition: .5s;
+    }
+
+    #res-side-nav {
+        display: block !important;
+        left: 0 !important;
     }
 
     /* main content */

@@ -12,7 +12,7 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-const SideLinks = () => {
+const SideLinks = ({ handleCloseNav }) => {
   const [expanded, setExpanded] = useState(false);
 
   const handleChange = (panel) => (event, isExpanded) => {
@@ -27,6 +27,7 @@ const SideLinks = () => {
           <NavLink
             to="/"
             className="links n-font c-white flex align-items-center "
+            onClick={handleCloseNav}
           >
             <div
               sx={{
@@ -60,12 +61,13 @@ const SideLinks = () => {
               id="panel1bh-header"
             >
               <GroupIcon className=" mr-1 c-white m-font" />
-                <span className="c-white">Customers</span>
+              <span className="c-white">Customers</span>
             </AccordionSummary>
             <AccordionDetails>
               <NavLink
                 to="customer/list"
                 className="links n-font c-white flex align-items-center "
+                onClick={handleCloseNav}
               >
                 <Typography className="c-white">List</Typography>
               </NavLink>
@@ -90,12 +92,16 @@ const SideLinks = () => {
               <NavLink
                 to="products/list"
                 className="links n-font c-white flex align-items-center "
+            onClick={handleCloseNav}
+
               >
                 <Typography className="c-white">List</Typography>
               </NavLink>
               <NavLink
                 to="products/create"
                 className="links n-font c-white flex align-items-center "
+            onClick={handleCloseNav}
+
               >
                 <Typography className="c-white mt-3">Create</Typography>
               </NavLink>
@@ -126,6 +132,8 @@ const SideLinks = () => {
               <NavLink
                 to="order/list"
                 className="links n-font c-white flex align-items-center "
+            onClick={handleCloseNav}
+
               >
                 <Typography className="c-white">List</Typography>
               </NavLink>
